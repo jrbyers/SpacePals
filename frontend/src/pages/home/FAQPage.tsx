@@ -1,5 +1,4 @@
 import React from 'react'
-import PersonComponent from '../../components/home/PersonComponent'
 
 import "./FAQPage.css"
 
