@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 
 function sendToBackend(imgString) {
-    fetch(`/graphql`, {
+    fetch(`/`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
