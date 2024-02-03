@@ -7,13 +7,12 @@ function Toolbar() {
     //returns the component
     return (
     <header className="header">
-        <a href="/" className="logo">SpotiDuo</a>
+        <a href="/" className="logo">SpacePals</a>
 
             <nav className="navbar">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/faq">FAQ</a>
-                <a href="/leaderboard">Leaderboard</a>
             </nav>
     </header>
     )
