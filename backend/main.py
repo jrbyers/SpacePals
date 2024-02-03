@@ -7,11 +7,11 @@ from ariadne.explorer import ExplorerGraphiQL
 explorer_html = ExplorerGraphiQL().html(None)
 
 # The model is where we'll define our resolvers
-from model import query
+from model import query, mutation
 
 # We'll create this schema soon
 type_defs = gql(load_schema_from_path("./schema.graphql"))
-schema = make_executable_schema(type_defs, query)
+schema = make_executable_schema(type_defs, query, mutation)
 
 app = Flask(__name__)
 

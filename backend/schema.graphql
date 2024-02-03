@@ -18,5 +18,8 @@ type Coffee {
 
 type Query {
   hello: String!
-  animals: [String]!
+  foundAnimals: [String]!
 }
+
+type Mutation {
+  sendImage(image: String!): String}
