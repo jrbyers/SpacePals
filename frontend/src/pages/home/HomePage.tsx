@@ -103,16 +103,6 @@ function HomePage() {
               >
                 <PlanetComponent />
               </motion.div>
-
-              <div
-                className={
-                  hovered
-                    ? "click-me-container-populated"
-                    : "click-me-container-empty"
-                }
-              >
-                Click me!
-              </div>
             </div>
           </motion.div>
         </div>
