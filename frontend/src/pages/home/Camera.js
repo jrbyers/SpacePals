@@ -53,6 +53,8 @@ function Camera() {
         photo.height = img_height;
 
         let ctx = photo.getContext('2d');
+        ctx.drawImage(video, 0, 0, img_width, img_height);
+        setHasPhoto(true);
 
         let imageData = ctx.getImageData(0, 0, photo.width, photo.height);
         let pixelData = imageData.data;
@@ -77,9 +79,6 @@ function Camera() {
         let jsonString = JSON.stringify(pixelArray);
 
         sendToBackend(jsonString)
-
-        ctx.drawImage(video, 0, 0, img_width, img_height);
-        setHasPhoto(true);
 
         // console.log('running');
         // console.log(ctx);
