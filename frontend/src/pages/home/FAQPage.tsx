@@ -7,36 +7,37 @@ import "./FAQPage.css"
 export default function FAQPage() {
   return (
     <div className="faq-page">
-        <div className="main-container-faq">
-          {/* <div className="z-wrapper">
-            <div className="y-wrapper">
-              <div className="x-wrapper"></div>
-            </div>
-          </div> */}
-            <div className="person-container-faq">
-              <PersonComponent handleHeadClick={() => {}} headClicked={false} disabledHover={false}/>
-            </div>
-            <div className="overview-container">
-                <span style={{fontWeight: "bold", fontSize:"18pt"}}>Overview of how it works:</span>
-                <br/>
-                <b>1.</b> Input the song you want to learn
-                <br/>
-                <b>2.</b> Specify the language you want to learn in the chosen song
-                <br/>
-                <b>3.</b> Select the language you are most comfortable with {'(your native language)'}
-                <br/>
-                <b>4.</b> Select the level of difficulty you want your game to be
-                <br/>
-                <b>5.</b> Play game! The song audio will be played and you just have to fill in the
-                missing word{'(s)'}/line. The more accurate you are, the more points you will get!
-                <br/> 
-                <b>6.</b> Once you finish a round, you can choose to play with other songs we recommend based
-                on your initial song and discover new artists!
-                <br/>
-                <b>7.</b> Have fun!
-            </div>
+      <div className="main-container-faq">
+        <div className="overview-container">
+          How do I get out of the Home Page?
+          <br></br>Please Click on the Planet to get out of the Home Page!
+          <br />
+          <br />
+          How do you know what the image is showing?
+          <br></br>We trained a machine learning model that clasifies the
+          animals for us!
+          <br />
+          <br />
+          How many alien animals are there?
+          <br></br>There are twenty different animals that you can find!
+          <br />
+          <br />
+          Are all animals equally easy to find?
+          <br></br>Some animals are rarer than others to find! Goodluck!
         </div>
+        <div id="circle-orbit-container">
+          <div id="sun"></div>
+          <div id="inner-orbit">
+            <div className="inner-orbit-cirlces"></div>
+          </div>
+          <div id="middle-orbit">
+            <div className="middle-orbit-cirlces"></div>
+          </div>
+          <div id="outer-orbit">
+            <div className="outer-orbit-cirlces"></div>
+          </div>
+        </div>
+      </div>
     </div>
-
-  )
+  );
 }
