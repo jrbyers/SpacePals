@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { LineAnimationComponent } from '../../components/home/LineAnimationComponent';
 import PersonComponent from '../../components/home/PersonComponent';
+import PlanetComponent from "../../components/home/Planet";
 
 import './HomePage.css';
 import '../../components/home/Person.css';
@@ -83,11 +84,11 @@ function HomePage() {
                 className="text-container"
               >
                 <div className="text-bottom">
-                  SpotiDuo:
+                  SpacePals:
                   <br></br>
-                  Type the Beat,
+                  Your Space
                   <br></br>
-                  Speak the Language!
+                  Voyage Awaits!
                 </div>
               </motion.div>
 
@@ -100,14 +101,16 @@ function HomePage() {
                 animate={animateStyle}
                 className="expanded-container"
               >
-                <PersonComponent
-                  handleHeadClick={handleHeadClick}
-                  headClicked={headClicked}
-                  disabledHover={false}
-                />
+                <PlanetComponent />
               </motion.div>
 
-              <div className={hovered ? "click-me-container-populated" : "click-me-container-empty"}>
+              <div
+                className={
+                  hovered
+                    ? "click-me-container-populated"
+                    : "click-me-container-empty"
+                }
+              >
                 Click me!
               </div>
             </div>
