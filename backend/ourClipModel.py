@@ -26,12 +26,11 @@ from transformers import CLIPProcessor, CLIPModel
 
 def classifyAnImage(image):
     image = np.asarray(ast.literal_eval(image))
-    print(image)
 
     model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
     processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
-    inputs = processor(text=["cat", "dog", "airplane"], images=image, return_tensors="pt", padding=True)
+    inputs = processor(text=["cat", "dog", "frog", "human"], images=image, return_tensors="pt", padding=True)
 
     outputs = model(**inputs)
     logits_per_image = outputs.logits_per_image  # this is the image-text similarity score
