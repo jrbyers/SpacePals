@@ -7,6 +7,7 @@ import GenerationPage from "./pages/input/GenerationPage";
 import GeneratedPlaylistPage from "./pages/result/GeneratedPlaylistPage";
 import AboutPage from "./pages/home/AboutPage";
 import FAQPage from "./pages/home/FAQPage";
+import Camera from "./pages/home/Camera";
 
 import "./App.css";
 import SettingsPage from "./pages/input/SettingsPage";
@@ -32,6 +33,7 @@ function App() {
             <Route path="/input/settings" element={<SettingsPage />} />
             <Route path="/input/lyrics" element={<GenerationPage />} />
             <Route path="/result" element={<GeneratedPlaylistPage />} />
+            <Route path="/camera" element={<Camera />} />
           </Routes>
         </Router>
       </div>
