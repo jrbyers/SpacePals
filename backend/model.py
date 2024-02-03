@@ -1,5 +1,6 @@
 from ariadne import QueryType, MutationType
 import logic
+import ourClipModel
 
 query = QueryType()
 mutation = MutationType()
@@ -18,5 +19,6 @@ def resolve_foundAnimals(_, info):
 
 @mutation.field("sendImage")
 def sendImage(_, info, image):
-   yo = image + "YO"
-   return yo
+   clip_response = ourClipModel.classifyAnImage(image)
+   print(clip_response)
+   return "yo"
