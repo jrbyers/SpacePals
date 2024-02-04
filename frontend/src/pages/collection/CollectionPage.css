@@ -14,9 +14,13 @@
 }
 
 .placeholder-card {
-  height: 290px;
+  height: 275px;
   background-color: #343d46;
   border-radius: 10px;
   font-size: 100px;
   color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

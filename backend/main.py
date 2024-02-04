@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify, make_response
 from ariadne import graphql_sync, make_executable_schema, gql, load_schema_from_path
-
 from ariadne.explorer import ExplorerGraphiQL
 import os
 
@@ -60,4 +59,4 @@ def _build_cors_preflight_response():
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 80))
-    app.run(debug=True, host='0.0.0.0', port=port)
+    app.run(host ='0.0.0.0', port=port)
