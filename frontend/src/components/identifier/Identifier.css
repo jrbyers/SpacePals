@@ -1,0 +1,26 @@
+.top-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: lightgray;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.animal-img {
+  display: block;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  margin-top: 20px;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
