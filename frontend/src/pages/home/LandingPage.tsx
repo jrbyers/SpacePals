@@ -20,7 +20,7 @@ function LandingPage() {
             className="left-center-button"
             onClick={handleButtonClickCamera}
           >
-            button
+            Explorer's Guidebook
           </button>
           <div className="planet-with-ring"> </div>
           <div className="beige-moon"></div>
