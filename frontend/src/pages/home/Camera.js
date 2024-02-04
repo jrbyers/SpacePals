@@ -27,6 +27,10 @@ function Camera() {
   const photoRef = useRef(null);
 
   const [hasPhoto, setHasPhoto] = useState(false);
+  const [ctx, setCTX] = useState(false);
+
+  const img_width = 414;
+  const img_height = img_width / (16 / 9);
 
   const getVideo = () => {
     navigator.mediaDevices
@@ -43,20 +47,7 @@ function Camera() {
       });
   };
 
-  const takePhoto = () => {
-    const img_width = 414;
-    const img_height = img_width / (16 / 9);
-
-    let video = videoRef.current;
-    let photo = photoRef.current;
-
-    photo.width = img_width;
-    photo.height = img_height;
-
-    let ctx = photo.getContext("2d");
-    ctx.drawImage(video, 0, 0, img_width, img_height);
-    setHasPhoto(true);
-
+  const classifyImage = () => {
     let imageData = ctx.getImageData(0, 0, photo.width, photo.height);
     let pixelData = imageData.data;
 
@@ -76,11 +67,28 @@ function Camera() {
     }
 
     let jsonString = JSON.stringify(pixelArray);
-
     sendToBackend(jsonString);
+  };
+
+  const takePhoto = () => {
+    let video = videoRef.current;
+    let photo = photoRef.current;
+
+    photo.width = img_width;
+    photo.height = img_height;
+
+    let ctx = photo.getContext("2d");
+    ctx.drawImage(video, 0, 0, img_width, img_height);
+    setCTX(ctx);
+    setHasPhoto(true);
 
     console.log("running");
-    // console.log(ctx);
+  };
+
+  const clearPhoto = () => {
+    ctx.clearRect(0, 0, img_width, img_height);
+    setCTX(null);
+    getVideo();
   };
 
   useEffect(() => {
@@ -89,7 +97,7 @@ function Camera() {
 
   return (
     <div>
-      {!hasPhoto && (
+      {!ctx && (
         <div>
           <div className="spaceship-border">
             <video ref={videoRef}></video>
@@ -101,8 +109,12 @@ function Camera() {
       )}
       <div>
         <canvas ref={photoRef}></canvas>
-        <Button variant="secondary">Identify</Button>
-        <Button variant="secondary" onClick={}>Retake</Button>
+        <Button variant="secondary" onClick={classifyImage}>
+          Identify
+        </Button>
+        <Button variant="secondary" onClick={clearPhoto}>
+          Retake
+        </Button>
       </div>
     </div>
   );
