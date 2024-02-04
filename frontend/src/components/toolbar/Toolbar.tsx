@@ -7,15 +7,13 @@ function Toolbar() {
   return (
     <header className="header">
       <a href="/" className="logo">
-        SpotiDuo
+        SpacePals
       </a>
 
       <nav className="navbar">
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/faq">FAQ</a>
-        <a href="/leaderboard">Leaderboard</a>
-        <a href="/collection">Collection</a>
       </nav>
     </header>
   );
