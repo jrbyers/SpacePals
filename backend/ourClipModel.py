@@ -29,10 +29,14 @@ def classifyAnImage(image):
 
     model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
     processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
+    
+    animal_list = ["cat", "dog", "frog", "horse", "bee", "bear", "fish", "human"]
 
-    inputs = processor(text=["cat", "dog", "frog", "human"], images=image, return_tensors="pt", padding=True)
+    inputs = processor(text=animal_list, images=image, return_tensors="pt", padding=True)
 
     outputs = model(**inputs)
     logits_per_image = outputs.logits_per_image  # this is the image-text similarity score
-    probs = logits_per_image.softmax(dim=1)
-    print(probs)
+    tensor_object = logits_per_image.softmax(dim=1)
+    probabilities = tensor_object[0].tolist()
+    arg_max = max(enumerate(probabilities), key=lambda x: x[1])[0]
+    return animal_list[arg_max]
