@@ -1,8 +1,8 @@
 div {
-  display: flex; /* Use flexbox layout */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center-align items horizontally in the flex container */
-  text-align: center; /* Ensure text is centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   color: lightgray;
 }
 
@@ -19,6 +19,13 @@ img {
   margin-bottom: 20px;
 }
 
+.button-group {
+  margin-top: 20px;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
 div {
-  width: 100%; /* Take the full width of its parent container */
+  width: 100%;
 }

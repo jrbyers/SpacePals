@@ -2,6 +2,8 @@ import React from "react";
 import "./Identifier.css";
 import Button from "react-bootstrap/Button";
 
+import JSConfetti from "js-confetti";
+
 interface IdentifierProps {
   name: string;
   alienName: string;
@@ -22,6 +24,10 @@ export default function Identifier({
 }: IdentifierProps) {
   // Function to toggle the visibility state
 
+  const jsConfetti = new JSConfetti();
+
+  jsConfetti.addConfetti();
+
   return (
     <div>
       <h1>Congratulations!</h1>
@@ -40,5 +46,4 @@ export default function Identifier({
       </div>
     </div>
   );
-  P;
 }

@@ -74,7 +74,7 @@ export default function CollectionPage() {
           />
         ) : (
           <div className="placeholder-card">
-            {index < 10 ? "0" + (index + 1) : index + 1}
+            {index < 9 ? "0" + (index + 1) : index + 1}
           </div>
         )
       )}
