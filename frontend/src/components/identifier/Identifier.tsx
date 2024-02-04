@@ -29,10 +29,10 @@ export default function Identifier({
   jsConfetti.addConfetti();
 
   return (
-    <div>
-      <h1>Congratulations!</h1>
+    <div className="top-div">
+      <h1 className="title">Congratulations!</h1>
       <h2>You caught a {alienName}.</h2>
-      <img src={image} />
+      <img className="animal-img" src={image} />
       <div>Height: {height}</div>
       <div>Weight: {weight}</div>
       <div>Rarity: {rarity}</div>

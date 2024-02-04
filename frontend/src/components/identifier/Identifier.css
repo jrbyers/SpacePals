@@ -1,4 +1,4 @@
-div {
+.top-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,12 +6,11 @@ div {
   color: lightgray;
 }
 
-h1 {
-  font-weight: bold; /* Ensures the h1 text is bold */
-  /* The color will inherit lightgray from the div */
+.title {
+  font-weight: bold;
 }
 
-img {
+.animal-img {
   display: block;
   height: 200px;
   border-radius: 10px;
@@ -24,8 +23,4 @@ img {
   align-items: center;
   gap: 10px;
   flex-direction: row;
-}
-
-div {
-  width: 100%;
 }
