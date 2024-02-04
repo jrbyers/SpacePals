@@ -13,6 +13,7 @@ import SettingsPage from "./pages/input/SettingsPage";
 import Toolbar from "./components/toolbar/Toolbar";
 import LeaderBoardPage from "./pages/home/LeaderBoardPage";
 import HomePage from "./pages/home/HomePage";
+import CollectionPage from "./pages/collection/CollectionPage";
 
 /**
  * This is the highest level component!
@@ -32,6 +33,7 @@ function App() {
             <Route path="/input/settings" element={<SettingsPage />} />
             <Route path="/input/lyrics" element={<GenerationPage />} />
             <Route path="/result" element={<GeneratedPlaylistPage />} />
+            <Route path="/collection" element={<CollectionPage />} />
           </Routes>
         </Router>
       </div>
