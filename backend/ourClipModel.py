@@ -1,4 +1,3 @@
-from PIL import Image
 import requests
 import numpy as np
 import ast

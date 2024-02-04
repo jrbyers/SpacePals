@@ -1,7 +1,8 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, make_response
 from ariadne import graphql_sync, make_executable_schema, gql, load_schema_from_path
 
 from ariadne.explorer import ExplorerGraphiQL
+import os
 
 
 explorer_html = ExplorerGraphiQL().html(None)
@@ -28,8 +29,10 @@ def graphql_playground():
     return explorer_html, 200
 
 
-@app.route("/", methods=["POST"])
+@app.route("/", methods=["POST", "OPTIONS"])
 def graphql_server():
+    if request.method == "OPTIONS": # CORS preflight
+        return _build_cors_preflight_response()
     data = request.get_json()
 
     success, result = graphql_sync(
@@ -40,9 +43,21 @@ def graphql_server():
     )
 
     status_code = 200 if success else 400
-    return jsonify(result), status_code
+    return _corsify_actual_response(jsonify(result)), status_code
+
+def _corsify_actual_response(response):
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
+
+def _build_cors_preflight_response():
+    response = make_response()
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add('Access-Control-Allow-Headers', "*")
+    response.headers.add('Access-Control-Allow-Methods', "*")
+    return response
+
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host ='0.0.0.0')
+    port = int(os.environ.get('PORT', 80))
+    app.run(debug=True, host='0.0.0.0', port=port)
