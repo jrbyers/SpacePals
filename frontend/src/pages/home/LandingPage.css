@@ -60,15 +60,21 @@
 }
 
 .left-center-button {
+  position: aboslute;
   background-color: white; /* Set background color to white */
-  color: purple; /* Set text color to black or any contrasting color */
-  border: 1px solid black; /* Add border for visibility, adjust as needed */
+  color: darkviolet; /* Set text color to black or any contrasting color */
   padding: 10px 20px; /* Adjust padding as needed */
   margin-left: auto; /* Push the button to the left */
-  margin-right: 20px; /* Adjust the left margin as needed */
+  margin-right: 150px; /* Adjust the left margin as needed */
   margin-bottom: auto;
-  margin-top: 200px;
+  margin-top: 400px;
   top: 1;
+  z-index: 9999;
+  width: 150px; /* Adjust the width */
+  height: 70px;
+  border-radius: 8px; /* Adjust the border radius to round the edges */
+  font-weight: bold;
+  border-color:white;
 }
 
 .planet-with-ring {
@@ -84,6 +90,7 @@
   /* Ring styles */
   border: 8px solid darkblue; /* Ring color */
   box-sizing: border-box;
+  z-index: 0;
 }
 
 .beige-moon {
@@ -103,6 +110,24 @@
   top: 37%;
   left: 42%;
   transform: translate(-50%, -50%), rotate(-50deg); /* Tilt the spaceship 45 degrees */
+}
+
+.camera-button{
+  position: fixed;
+  background-color: white; /* Set background color to white */
+  color: red; /* Set text color to black or any contrasting color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin-left: auto; /* Push the button to the left */
+  margin-right: 420px; /* Adjust the left margin as needed */
+  margin-bottom: auto;
+  margin-top: -310px;
+  top: 1;
+  z-index: 100;
+  width: 150px; /* Adjust the width */
+  height: 70px;
+  border-radius: 8px; /* Adjust the border radius to round the edges */
+  border-color:white;
+  font-weight: bold;
 }
 
 

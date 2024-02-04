@@ -10,17 +10,23 @@ function LandingPage() {
   const handleButtonClickCamera = () => {
     navigate("/Camera");
   };
+  const handleButtonClickCollection = () => {
+    navigate("/collection");
+  }
 
 
   return (
     <>
       <div className="landing-page">
         <div className="main-container">
+          <button className="camera-button" onClick={handleButtonClickCamera}>
+            Catch an Alien!
+          </button>
           <button
             className="left-center-button"
-            onClick={handleButtonClickCamera}
+            onClick={handleButtonClickCollection}
           >
-            button
+            Explorer's Guidebook
           </button>
           <div className="planet-with-ring"> </div>
           <div className="beige-moon"></div>
