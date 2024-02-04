@@ -2,8 +2,6 @@
   height: 100vh; /* Adjust based on your desired fixed height */
   overflow-y: auto; /* Enables vertical scrolling */
   border-radius: 8px; /* Optional, rounds the corners of the container */
-  padding: 16px; /* Optional, adds some space inside the container */
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 16px; /* Adjusts the gap between grid items */
@@ -16,12 +14,9 @@
 }
 
 .placeholder-card {
-  height: 275px;
+  height: 290px;
   background-color: #343d46;
   border-radius: 10px;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
   font-size: 100px;
   color: lightgray;
 }

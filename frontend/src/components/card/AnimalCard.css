@@ -4,6 +4,7 @@
   object-fit: cover;
 }
 .animal-card {
+  height: 270px;
   background-color: #343d46;
   border-radius: 10px;
   color: lightgray;
