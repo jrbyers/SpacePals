@@ -60,9 +60,9 @@
 }
 
 .left-center-button {
+  position: aboslute;
   background-color: white; /* Set background color to white */
   color: darkviolet; /* Set text color to black or any contrasting color */
-  border: 3px solid darkblue; /* Add border for visibility, adjust as needed */
   padding: 10px 20px; /* Adjust padding as needed */
   margin-left: auto; /* Push the button to the left */
   margin-right: 150px; /* Adjust the left margin as needed */
@@ -71,7 +71,10 @@
   top: 1;
   z-index: 9999;
   width: 150px; /* Adjust the width */
-  height: 50px;
+  height: 70px;
+  border-radius: 8px; /* Adjust the border radius to round the edges */
+  font-weight: bold;
+  border-color:white;
 }
 
 .planet-with-ring {
@@ -110,18 +113,21 @@
 }
 
 .camera-button{
+  position: fixed;
   background-color: white; /* Set background color to white */
-  color: darkviolet; /* Set text color to black or any contrasting color */
-  border: 3px solid darkblue; /* Add border for visibility, adjust as needed */
+  color: red; /* Set text color to black or any contrasting color */
   padding: 10px 20px; /* Adjust padding as needed */
   margin-left: auto; /* Push the button to the left */
-  margin-right: 150px; /* Adjust the left margin as needed */
+  margin-right: 420px; /* Adjust the left margin as needed */
   margin-bottom: auto;
-  margin-top: 400px;
+  margin-top: -310px;
   top: 1;
-  z-index: 9999;
+  z-index: 100;
   width: 150px; /* Adjust the width */
-  height: 50px;
+  height: 70px;
+  border-radius: 8px; /* Adjust the border radius to round the edges */
+  border-color:white;
+  font-weight: bold;
 }
 
 

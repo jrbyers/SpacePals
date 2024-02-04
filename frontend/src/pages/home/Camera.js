@@ -102,7 +102,7 @@ function Camera() {
       <div>
         <canvas ref={photoRef}></canvas>
         <Button variant="secondary">Identify</Button>
-        <Button variant="secondary" onClick={}>Retake</Button>
+        
       </div>
     </div>
   );
