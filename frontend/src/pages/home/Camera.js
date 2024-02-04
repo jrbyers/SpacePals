@@ -1,36 +1,40 @@
 import React, { useRef, useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 
-import "./Camera.css";
+import Identifier from "src/components/identifier/Identifier";
+import animals from "src/assets/animals/animals2.json";
 
-function sendToBackend(imgString) {
-  fetch(`/`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      query: `mutation {
-          sendImage(image: "${imgString}")
-        }`,
-    }),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    })
-    .catch(console.error);
-}
+import "./Camera.css";
 
 function Camera() {
   const videoRef = useRef(null);
   const photoRef = useRef(null);
 
-  const [hasPhoto, setHasPhoto] = useState(false);
   const [ctx, setCTX] = useState(false);
+  const [identified, setIdentified] = useState(null);
 
-  const img_width = 414;
+  const img_width = 650;
   const img_height = img_width / (16 / 9);
+
+  const sendToBackend = (imgString) => {
+    fetch(`/`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: `mutation {
+              sendImage(image: "${imgString}")
+            }`,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setIdentified(animals[data.data.sendImage]);
+        console.log(identified);
+      })
+      .catch(console.error);
+  };
 
   const getVideo = () => {
     navigator.mediaDevices
@@ -48,17 +52,15 @@ function Camera() {
   };
 
   const classifyImage = () => {
-    let imageData = ctx.getImageData(0, 0, photo.width, photo.height);
+    let imageData = ctx.getImageData(0, 0, img_width, img_height);
     let pixelData = imageData.data;
 
     // Convert pixel data to a 3D array
-    let width = photo.width;
-    // let height = photo.height;
     let pixelArray = [];
 
     for (let i = 0; i < pixelData.length; i += 4) {
-      let row = Math.floor(i / (width * 4));
-      let col = (i / 4) % width;
+      let row = Math.floor(i / (img_width * 4));
+      let col = (i / 4) % img_width;
       if (!pixelArray[row]) pixelArray[row] = [];
 
       // Organize each pixel as an array with RGBA components
@@ -80,9 +82,6 @@ function Camera() {
     let ctx = photo.getContext("2d");
     ctx.drawImage(video, 0, 0, img_width, img_height);
     setCTX(ctx);
-    setHasPhoto(true);
-
-    console.log("running");
   };
 
   const clearPhoto = () => {
@@ -97,25 +96,40 @@ function Camera() {
 
   return (
     <div>
-      {!ctx && (
+      {!identified ? (
         <div>
-          <div className="spaceship-border">
-            <video ref={videoRef}></video>
+          {!ctx && (
+            <div>
+              <div className="spaceship-border">
+                <video ref={videoRef}></video>
+              </div>
+              <Button variant="secondary" onClick={takePhoto}>
+                Catch!
+              </Button>
+            </div>
+          )}
+          <div className="canvas-container">
+            <canvas ref={photoRef}></canvas>
+            <div className="button-group">
+              <Button variant="secondary" onClick={classifyImage}>
+                Identify
+              </Button>
+              <Button variant="secondary" onClick={clearPhoto}>
+                Retake
+              </Button>
+            </div>
           </div>
-          <Button variant="secondary" onClick={takePhoto}>
-            Catch!
-          </Button>
         </div>
+      ) : (
+        <Identifier
+          name={identified.name}
+          alienName={identified.alienName}
+          height={identified.height}
+          weight={identified.weight}
+          rarity={identified.rarity}
+          image={identified.image}
+        />
       )}
-      <div>
-        <canvas ref={photoRef}></canvas>
-        <Button variant="secondary" onClick={classifyImage}>
-          Identify
-        </Button>
-        <Button variant="secondary" onClick={clearPhoto}>
-          Retake
-        </Button>
-      </div>
     </div>
   );
 }
