@@ -8,6 +8,7 @@ import FAQPage from "./pages/home/FAQPage";
 import "./App.css";
 import Toolbar from "./components/toolbar/Toolbar";
 import HomePage from "./pages/home/HomePage";
+import Camera from "./pages/home/Camera"
 
 /**
  * This is the highest level component!
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path='/camera' element={<Camera />} />
           </Routes>
         </Router>
       </div>
