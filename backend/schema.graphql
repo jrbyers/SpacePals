@@ -18,7 +18,7 @@ type Coffee {
 
 type Query {
   hello: String!
-  foundAnimals: [String]!
+  foundAnimals: [Int]!
 }
 
 type Mutation {

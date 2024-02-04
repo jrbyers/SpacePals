@@ -1,64 +1,84 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 
 import "./CollectionPage.css";
 import animals from "src/assets/animals/animals2.json";
-
 import AnimalCard from "src/components/card/AnimalCard";
 
 //main component of the collection page
 export default function CollectionPage() {
-  const foundAnimals: boolean[] = [
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    true,
-  ];
+  const [foundAnimals, setFoundAnimals] = useState<boolean[]>([]);
+
+  useEffect(() => {
+    fetch(`/`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: `{foundAnimals}`,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setFoundAnimals(data.data.foundAnimals);
+      })
+      .catch(console.error);
+  })
+
+
+  // const foundAnimals: boolean[] = [
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   false,
+  //   true,
+  //   true,
+  // ];
+
   return (
     <div className="animal-gallery">
       {animals.map((animal, index) =>
@@ -80,4 +100,4 @@ export default function CollectionPage() {
       )}
     </div>
   );
-}
+};
