@@ -33,7 +33,8 @@ def read_list_from_file(file_path):
 
 def update_list(boolean_list, index_to_update):
     if 0 <= index_to_update < len(boolean_list):
-        boolean_list[index_to_update] = not boolean_list[index_to_update]
+        # boolean_list[index_to_update] = not boolean_list[index_to_update]
+        boolean_list[index_to_update] = 1
 
 def write_list_to_file(boolean_list, file_path):
     with open(file_path, 'w') as file:

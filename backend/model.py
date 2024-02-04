@@ -12,8 +12,8 @@ def resolve_hello(_, info):
 
 @query.field("foundAnimals")
 def resolve_foundAnimals(_, info):
-    #number = logic.giveRandom()
-    return ["deer", "monkeeee"]
+    boolList = ourClipModel.read_list_from_file('bool.txt')
+    return boolList
 
 @mutation.field("sendImage")
 def sendImage(_, info, image):

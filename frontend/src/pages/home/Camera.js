@@ -48,11 +48,11 @@ function Camera() {
   };
 
   const classifyImage = () => {
-    let imageData = ctx.getImageData(0, 0, photo.width, photo.height);
+    let imageData = ctx.getImageData(0, 0, img_width, img_height);
     let pixelData = imageData.data;
 
     // Convert pixel data to a 3D array
-    let width = photo.width;
+    let width = img_width;
     // let height = photo.height;
     let pixelArray = [];
 
