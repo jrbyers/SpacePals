@@ -15,9 +15,8 @@ def resolve_foundAnimals(_, info):
     #number = logic.giveRandom()
     return ["deer", "monkeeee"]
 
-
-
 @mutation.field("sendImage")
 def sendImage(_, info, image):
    clip_response = ourClipModel.classifyAnImage(image)
+#    print(clip_response)
    return clip_response

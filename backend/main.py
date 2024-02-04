@@ -15,6 +15,13 @@ schema = make_executable_schema(type_defs, query, mutation)
 
 app = Flask(__name__)
 
+# List of T/F
+bool_list = [False] * 50
+
+file_path = 'bool.txt'
+with open(file_path, 'w') as file:
+    file.write('\n'.join(map(str, map(int, bool_list))))
+
 @app.route("/", methods=["GET"])
 def graphql_playground():
     """Serve GraphiQL playground"""
