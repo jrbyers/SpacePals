@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from ariadne import graphql_sync, make_executable_schema, gql, load_schema_from_path
-
 from ariadne.explorer import ExplorerGraphiQL
+import os
 
 
 explorer_html = ExplorerGraphiQL().html(None)
@@ -44,5 +44,5 @@ def graphql_server():
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host ='0.0.0.0')
+    port = int(os.environ.get('PORT', 80))
+    app.run(host ='0.0.0.0', port=port)
