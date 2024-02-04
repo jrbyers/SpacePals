@@ -70,11 +70,9 @@ function Camera() {
             if (!pixelArray[row]) pixelArray[row] = [];
 
             // Organize each pixel as an array with RGBA components
-            let pixel = [pixelData[i], pixelData[i + 1], pixelData[i + 2], pixelData[i + 3]];
+            let pixel = [pixelData[i], pixelData[i + 1], pixelData[i + 2]];
             pixelArray[row][col] = pixel;
         }
-
-        // console.log(pixelArray);
 
         let jsonString = JSON.stringify(pixelArray);
 
