@@ -1,0 +1,402 @@
+[
+  {
+    "name": "antelope",
+    "alienName": "Nebula Antelope",
+    "height": "1.5 m",
+    "weight": "120 kg",
+    "rarity": "Uncommon",
+    "image": "https://animals.sandiegozoo.org/sites/default/files/2016-09/animals_hero_antelope.jpg"
+  },
+  {
+    "name": "badger",
+    "alienName": "Meteor Badger",
+    "height": "0.9 m",
+    "weight": "11 kg",
+    "rarity": "Uncommon",
+    "image": "https://cdn.britannica.com/96/172396-050-7B768F9B/American-badger.jpg?w=400&h=300&c=crop"
+  },
+  {
+    "name": "dolphin",
+    "alienName": "Galaxy Dolphin",
+    "height": "2.5 m",
+    "weight": "150 kg",
+    "rarity": "Epic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/500px-Tursiops_truncatus_01.jpg"
+  },
+  {
+    "name": "dragonfly",
+    "alienName": "Comet Dragonfly",
+    "height": "0.1 m",
+    "weight": "0.001 kg",
+    "rarity": "Rare",
+    "image": "https://www.treehugger.com/thmb/680leyfxSNNQC0la2drWfGxM6Mg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4-bc3246043abe473ab750f039b5c70b53.jpg"
+  },
+  {
+    "name": "duck",
+    "alienName": "Star Duck",
+    "height": "0.5 m",
+    "weight": "1 kg",
+    "rarity": "Rare",
+    "image": "https://www.kalmbachfeeds.com/wp-content/uploads/2022/07/two-white-ducks-in-grass.jpg"
+  },
+  {
+    "name": "goldfish",
+    "alienName": "Asteroid Goldfish",
+    "height": "0.15 m",
+    "weight": "0.1 kg",
+    "rarity": "Mythic",
+    "image": "http://www.hikariusa.com/wp/wp-content/uploads/Goldfish-Fancy-973x800.jpg"
+  },
+  {
+    "name": "goat",
+    "alienName": "Moon Goat",
+    "height": "0.9 m",
+    "weight": "45 kg",
+    "rarity": "Legendary",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/440px-Hausziege_04.jpg"
+  },
+  {
+    "name": "hamster",
+    "alienName": "Satellite Hamster",
+    "height": "0.15 m",
+    "weight": "0.075 kg",
+    "rarity": "Uncommon",
+    "image": "https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_636,w_636/c_pad,h_636,w_636/135690-Center-2"
+  },
+  {
+    "name": "hyena",
+    "alienName": "Orbit Hyena",
+    "height": "0.8 m",
+    "weight": "40 kg",
+    "rarity": "Mythic",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqemIQcYCXEIq-HeRFCCW1YYCiA57Bv2BsGuIzEjdltFcr5j8Z"
+  },
+  {
+    "name": "jellyfish",
+    "alienName": "Void Jellyfish",
+    "height": "0.5 m",
+    "weight": "0.02 kg",
+    "rarity": "Uncommon",
+    "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTgE7qubLpsdTLb0e7zpDLtsqgMwmP-6DCmumczayn_6ZfCSRlLOAaiTo5Y6zsP99czhjY6z2882j_F9Z0"
+  },
+  {
+    "name": "hummingbird",
+    "alienName": "Solar Hummingbird",
+    "height": "0.1 m",
+    "weight": "0.005 kg",
+    "rarity": "Uncommon",
+    "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/609831126/1800"
+  },
+  {
+    "name": "leopard",
+    "alienName": "Cosmic Leopard",
+    "height": "0.6 m",
+    "weight": "31 kg",
+    "rarity": "Mythic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/800px-African_leopard_male_%28cropped%29.jpg"
+  },
+  {
+    "name": "lion",
+    "alienName": "Sun Lion",
+    "height": "1.2 m",
+    "weight": "190 kg",
+    "rarity": "Epic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/1200px-Lion_waiting_in_Namibia.jpg"
+  },
+  {
+    "name": "moth",
+    "alienName": "Eclipse Moth",
+    "height": "0.02 m",
+    "weight": "0.003 kg",
+    "rarity": "Legendary",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Attacus_atlas_%2815050883139%29.jpg/800px-Attacus_atlas_%2815050883139%29.jpg"
+  },
+  {
+    "name": "panda",
+    "alienName": "Planet Panda",
+    "height": "0.75 m",
+    "weight": "100 kg",
+    "rarity": "Rare",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1200px-Grosser_Panda.JPG"
+  },
+  {
+    "name": "possum",
+    "alienName": "Black Hole Possum",
+    "height": "0.5 m",
+    "weight": "1.5 kg",
+    "rarity": "Rare",
+    "image": "https://www.cbc.ca/natureofthings/content/legacy/NCC_Opossums3_1920.jpg"
+  },
+  {
+    "name": "raccoon",
+    "alienName": "Cluster Raccoon",
+    "height": "0.6 m",
+    "weight": "9 kg",
+    "rarity": "Uncommon",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/1200px-Raccoon_in_Central_Park_%2835264%29.jpg"
+  },
+  {
+    "name": "rat",
+    "alienName": "Quasar Rat",
+    "height": "0.2 m",
+    "weight": "0.5 kg",
+    "rarity": "Rare",
+    "image": "https://www.pbs.org/wnet/nature/files/2021/05/rat.png"
+  },
+  {
+    "name": "seal",
+    "alienName": "Galactic Seal",
+    "height": "1.8 m",
+    "weight": "150 kg",
+    "rarity": "Rare",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/California_sea_lion_in_La_Jolla_%2870568%29.jpg"
+  },
+  {
+    "name": "shark",
+    "alienName": "Nebula Shark",
+    "height": "3.5 m",
+    "weight": "300 kg",
+    "rarity": "Uncommon",
+    "image": "https://th-thumbnailer.cdn-si-edu.com/dWnvNyescmShJrZFE8oAluDZChc=/1000x750/filters:no_upscale():focal(1542x1697:1543x1698)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/d0/06/d00620a0-8dc9-4be8-a3c1-cd075845b348/42-53008611.jpg"
+  },
+  {
+    "name": "lizard",
+    "alienName": "Cosmic Lizard",
+    "height": "0.2 m",
+    "weight": "0.5 kg",
+    "rarity": "Legendary",
+    "image": "https://media.post.rvohealth.io/wp-content/uploads/2021/06/lizard-iguana-1200x628-facebook.jpg"
+  },
+  {
+    "name": "kangaroo",
+    "alienName": "Void Kangaroo",
+    "height": "1.5 m",
+    "weight": "55 kg",
+    "rarity": "Epic",
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFs0Ih6zatI_pkVdf4B-tILvf8tYRWLQsY-56keymdrjfpagOB"
+  },
+  {
+    "name": "mouse",
+    "alienName": "Cluster Mouse",
+    "height": "0.1 m",
+    "weight": "0.02 kg",
+    "rarity": "Uncommon",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%D0%9C%D1%8B%D1%88%D1%8C_2.jpg"
+  },
+  {
+    "name": "octopus",
+    "alienName": "Galactic Octopus",
+    "height": "0.5 m",
+    "weight": "15 kg",
+    "rarity": "Rare",
+    "image": "https://i.natgeofe.com/k/46655f11-9522-411d-9e3b-1a6a576cb0c8/octopus_square.jpg"
+  },
+  {
+    "name": "orangutan",
+    "alienName": "Nebula Orangutan",
+    "height": "1.4 m",
+    "weight": "75 kg",
+    "rarity": "Mythic",
+    "image": "https://www.treehugger.com/thmb/jMK1MRCGqd27Qg-oLonRhjGg2TY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-107246950-48773102b7e0453c8011a7816886c947.jpg"
+  },
+  {
+    "name": "owl",
+    "alienName": "Solar Owl",
+    "height": "0.4 m",
+    "weight": "1 kg",
+    "rarity": "Common",
+    "image": "https://cbop.audubon.org/sites/default/files/styles/bean_wysiwyg_full_width/public/maple_2_0.jpg?itok=A4jeyFoH"
+  },
+  {
+    "name": "ox",
+    "alienName": "Star Ox",
+    "height": "1.5 m",
+    "weight": "600 kg",
+    "rarity": "Uncommon",
+    "image": "https://a-z-animals.com/media/2022/02/ox.jpg"
+  },
+  {
+    "name": "pigeon",
+    "alienName": "Comet Pigeon",
+    "height": "0.3 m",
+    "weight": "0.3 kg",
+    "rarity": "Common",
+    "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/308065631/1800"
+  },
+  {
+    "name": "penguin",
+    "alienName": "Moon Penguin",
+    "height": "0.7 m",
+    "weight": "25 kg",
+    "rarity": "Epic",
+    "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/612763581/1800"
+  },
+  {
+    "name": "pig",
+    "alienName": "Meteor Pig",
+    "height": "0.9 m",
+    "weight": "75 kg",
+    "rarity": "Common",
+    "image": "https://i.natgeofe.com/k/0ed36c42-672a-425b-9e62-7cc946b98051/pig-fence_square.jpg"
+  },
+  {
+    "name": "fox",
+    "alienName": "Orbit Fox",
+    "height": "0.6 m",
+    "weight": "6 kg",
+    "rarity": "Rare",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Vulpes_vulpes_ssp_fulvus.jpg"
+  },
+  {
+    "name": "dog",
+    "alienName": "Planet Dog",
+    "height": "0.6 m",
+    "weight": "30 kg",
+    "rarity": "Common",
+    "image": "https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/02/KOA_Nassau_2697x1517.jpg?itok=Bg2K7j7J"
+  },
+  {
+    "name": "caterpillar",
+    "alienName": "Asteroid Caterpillar",
+    "height": "0.02 m",
+    "weight": "0.009 kg",
+    "rarity": "Uncommon",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCpzEFQ_YzNN8VSfwv70EuJt1lqY0p-424LSQvImeDlXmnWd4L"
+  },
+  {
+    "name": "bat",
+    "alienName": "Supernova Bat",
+    "height": "0.15 m",
+    "weight": "0.03 kg",
+    "rarity": "Common",
+    "image": "https://cdn.britannica.com/21/75121-050-8CF5E1DB/Bats-structures-organs-sound-frequencies-signals-contexts.jpg"
+  },
+  {
+    "name": "crab",
+    "alienName": "Satellite Crab",
+    "height": "0.25 m",
+    "weight": "1 kg",
+    "rarity": "Uncommon",
+    "image": "https://www.collinsdictionary.com/images/full/crab_307569737.jpg"
+  },
+  {
+    "name": "crow",
+    "alienName": "Eclipse Crow",
+    "height": "0.4 m",
+    "weight": "0.4 kg",
+    "rarity": "Common",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Corvus_corone_-near_Canford_Cliffs%2C_Poole%2C_England-8.jpg/800px-Corvus_corone_-near_Canford_Cliffs%2C_Poole%2C_England-8.jpg"
+  },
+  {
+    "name": "donkey",
+    "alienName": "Quasar Donkey",
+    "height": "1.0 m",
+    "weight": "250 kg",
+    "rarity": "Uncommon",
+    "image": "https://cdn.britannica.com/68/143568-050-5246474F/Donkey.jpg"
+  },
+  {
+    "name": "hippopotamus",
+    "alienName": "Black Hole Hippopotamus",
+    "height": "1.5 m",
+    "weight": "1500 kg",
+    "rarity": "Rare",
+    "image": "https://i.natgeofe.com/k/59ccd67f-c57c-4946-99bd-f957a38dafaa/hippopotamus-closeup-water_3x4.jpg"
+  },
+  {
+    "name": "mosquito",
+    "alienName": "Void Mosquito",
+    "height": "0.01 m",
+    "weight": "0.000025 kg",
+    "rarity": "Common",
+    "image": "https://images.theconversation.com/files/415996/original/file-20210813-20-bi0lsj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip"
+  },
+  {
+    "name": "otter",
+    "alienName": "Galaxy Otter",
+    "height": "0.6 m",
+    "weight": "9 kg",
+    "rarity": "Uncommon",
+    "image": "https://www.americanrivers.org/wp-content/uploads/2021/10/36416802923_f2a4c89a1d_b-1.jpeg"
+  },
+  {
+    "name": "okapi",
+    "alienName": "Star Okapi",
+    "height": "1.5 m",
+    "weight": "250 kg",
+    "rarity": "Legendary",
+    "image": "https://cdn.britannica.com/80/146380-050-9144819E/Okapi.jpg"
+  },
+  {
+    "name": "parrot",
+    "alienName": "Solar Parrot",
+    "height": "0.3 m",
+    "weight": "0.9 kg",
+    "rarity": "Rare",
+    "image": "https://i.natgeofe.com/n/e3ae5fbf-ddc9-4b18-8c75-81d2daf962c1/3948225.jpg"
+  },
+  {
+    "name": "sandpiper",
+    "alienName": "Meteor Sandpiper",
+    "height": "0.2 m",
+    "weight": "0.1 kg",
+    "rarity": "Common",
+    "image": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/301565971/1800"
+  },
+  {
+    "name": "seahorse",
+    "alienName": "Meteor Seahorse",
+    "height": "0.025 m",
+    "weight": "0.005 kg",
+    "rarity": "Epic",
+    "image": "https://www.treehugger.com/thmb/HoIg45uBOVUhR7wdkXyTvu-Sa7o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1159240457-79e9779a466c4b6e82d188384c34142b.jpg"
+  },
+  {
+    "name": "swan",
+    "alienName": "Black Hole Swan",
+    "height": "1.2 m",
+    "weight": "12 kg",
+    "rarity": "Mythic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Mute_swan_Vrhnika.jpg"
+  },
+  {
+    "name": "tiger",
+    "alienName": "Satellite Tiger",
+    "height": "0.9 m",
+    "weight": "300 kg",
+    "rarity": "Uncommon",
+    "image": "https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg"
+  },
+  {
+    "name": "reindeer",
+    "alienName": "Galactic Reindeer",
+    "height": "1.2 m",
+    "weight": "180 kg",
+    "rarity": "Uncommon",
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ61p1TApfDga8TOR7XjegMNhQlUmmLUO8eUb6vZtL6e3ed5Uv0"
+  },
+  {
+    "name": "squirrel",
+    "alienName": "Orbit Squirrel",
+    "height": "0.2 m",
+    "weight": "0.5 kg",
+    "rarity": "Legendary",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/EasternGraySquirrel_GAm.jpg"
+  },
+  {
+    "name": "turkey",
+    "alienName": "Cluster Turkey",
+    "height": "1.1 m",
+    "weight": "11 kg",
+    "rarity": "Epic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Male_wild_turkey_%28Meleagris_gallopavo%29_strutting.jpg"
+  },
+  {
+    "name": "human",
+    "alienName": "Earth Human",
+    "height": "1.6 m",
+    "weight": "90 kg",
+    "rarity": "Common",
+    "image": "https://media.licdn.com/dms/image/C4E03AQHS28YkSTp9oQ/profile-displayphoto-shrink_800_800/0/1632405081957?e=2147483647&v=beta&t=mHI-zpz8uZDsg9zAsjJ12B6AHJsvcSwkSQes7_3n9OE"
+  }
+]
