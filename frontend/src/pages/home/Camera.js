@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 
 import "./Camera.css";
+let photo;
 
 function sendToBackend(imgString) {
   fetch(`/`, {
