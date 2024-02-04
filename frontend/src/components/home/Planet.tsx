@@ -11,7 +11,7 @@ const Planet = () => {
     setHovered(!isHovered);
   };
   const handleClick = () => {
-    navigate("/LangingPage");
+    navigate("/LandingPage");
   };
 
   const size = isHovered ? "150px" : "100px";

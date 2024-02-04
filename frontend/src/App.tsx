@@ -4,6 +4,8 @@ import React from "react";
 
 import AboutPage from "./pages/home/AboutPage";
 import FAQPage from "./pages/home/FAQPage";
+import LandingPage from "./pages/home/LandingPage"
+import Camera from "./pages/home/Camera"
 
 import "./App.css";
 import Toolbar from "./components/toolbar/Toolbar";
@@ -14,16 +16,18 @@ import HomePage from "./pages/home/HomePage";
  */
 function App() {
   return (
-      <div className="App">
-        <Toolbar />
-        <Router>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/faq" element={<FAQPage />} />
-          </Routes>
-        </Router>
-      </div>
+    <div className="App">
+      <Toolbar />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/LandingPage" element={<LandingPage />} />
+          <Route path="/Camera" element={<Camera />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
