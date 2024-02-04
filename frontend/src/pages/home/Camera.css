@@ -1,0 +1,13 @@
+.spaceship-border {
+  border: 3px solid #5a5a5a; /* Basic metallic border */
+  border-radius: 50px; /* Optional: if you want rounded corners */
+  box-shadow: 0 0 20px #9d9d9d,
+    /* Outer white glow */ inset 0 0 10px rgba(255, 255, 255, 0.5),
+    /* Inner glow for depth */ 0 20px 20px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+  margin: 20px; /* Space around the element to ensure border visibility */
+  overflow: hidden; /* To ensure the video respects the border-radius */
+  width: 650px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
