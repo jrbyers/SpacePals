@@ -36,6 +36,9 @@ def update_list(boolean_list, index_to_update):
         # boolean_list[index_to_update] = not boolean_list[index_to_update]
         boolean_list[index_to_update] = 1
 
+def remove_index(boolean_list, index):
+    boolean_list[index] = 0
+
 def write_list_to_file(boolean_list, file_path):
     with open(file_path, 'w') as file:
         file.write('\n'.join(map(str, map(int, boolean_list))))
@@ -75,7 +78,7 @@ def classifyAnImage(image):
         "octopus",
         "orangutan",
         "owl",
-        "ox",
+        "bear",
         "pigeon",
         "penguin",
         "pig",

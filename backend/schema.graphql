@@ -22,4 +22,6 @@ type Query {
 }
 
 type Mutation {
-  sendImage(image: String!): Int}
+  sendImage(image: String!): Int
+  removeAnimal(index: String!): String
+}

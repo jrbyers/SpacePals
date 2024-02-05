@@ -208,12 +208,12 @@
     "image": "https://cbop.audubon.org/sites/default/files/styles/bean_wysiwyg_full_width/public/maple_2_0.jpg?itok=A4jeyFoH"
   },
   {
-    "name": "ox",
-    "alienName": "Star Ox",
-    "height": "1.5 m",
+    "name": "bear",
+    "alienName": "Black Hole Bear",
+    "height": "2 m",
     "weight": "600 kg",
-    "rarity": "Uncommon",
-    "image": "https://a-z-animals.com/media/2022/02/ox.jpg"
+    "rarity": "Legendary",
+    "image": "https://250.brown.edu/sites/main-dev/files/styles/timeline_900_auto/public/250_so01882d9f.jpg?itok=pawMZPkP"
   },
   {
     "name": "pigeon",

@@ -15,6 +15,14 @@ def resolve_foundAnimals(_, info):
     boolList = ourClipModel.read_list_from_file('bool.txt')
     return boolList
 
+@mutation.field("removeAnimal")
+def resolve_removeAnimal(_, info, index):
+    index = int(index)
+    boolList = ourClipModel.read_list_from_file('bool.txt')
+    ourClipModel.remove_index(boolList, index)
+    ourClipModel.write_list_to_file(boolList, 'bool.txt')
+    return "Done"
+
 @mutation.field("sendImage")
 def sendImage(_, info, image):
    clip_response = ourClipModel.classifyAnImage(image)

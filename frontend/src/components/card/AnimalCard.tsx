@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./AnimalCard.css";
+import Button from "react-bootstrap/Button";
+
 
 interface AnimalCardProps {
+  index: number;
   name: string;
   alienName: string;
   height: string;
@@ -12,6 +15,7 @@ interface AnimalCardProps {
 
 //main component that renders the card
 export default function AnimalCard({
+  index,
   name,
   alienName,
   height,
@@ -25,6 +29,23 @@ export default function AnimalCard({
   const toggleDetails = () => {
     setShowDetails(!showDetails);
   };
+
+  const setFree = () => {
+    fetch(`/`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: `mutation {
+          removeAnimal(index: "${String(index)}")
+        }`,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch(console.error);
+  }
 
   return (
     <div
@@ -49,13 +70,14 @@ export default function AnimalCard({
           <p>Height: {height}</p>
           <p>Weight: {weight}</p>
           <p>Rarity: {rarity}</p>
-          <button
-            onClick={(e) => {
-              e.stopPropagation(); // Prevents the toggleDetails from being called
-            }}
+          <Button
+          variant="secondary"
+            onClick={
+              setFree
+            }
           >
             Set Free!
-          </button>
+          </Button>
         </div>
       )}
     </div>

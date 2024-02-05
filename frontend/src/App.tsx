@@ -27,6 +27,7 @@ function App() {
           <Route path="/LandingPage" element={<LandingPage />} />
           <Route path="/Camera" element={<Camera />} />
           <Route path="/collection" element={<CollectionPage />} />
+          <Route path="/camera" element={<Camera />} />
         </Routes>
       </Router>
     </div>

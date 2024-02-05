@@ -25,66 +25,13 @@ export default function CollectionPage() {
       .catch(console.error);
   })
 
-
-  // const foundAnimals: boolean[] = [
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   false,
-  //   true,
-  //   true,
-  // ];
-
   return (
     <div className="animal-gallery">
       {animals.map((animal, index) =>
         foundAnimals[index] ? (
           <AnimalCard
             key={index}
+            index={index}
             name={animal.name}
             alienName={animal.alienName}
             height={animal.height}

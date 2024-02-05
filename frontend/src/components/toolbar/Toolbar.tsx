@@ -15,6 +15,7 @@ function Toolbar() {
         <a href="/about">About</a>
         <a href="/faq">FAQ</a>
         <a href="/collection">Collection</a>
+        <a href="/camera">Catch!</a>
       </nav>
     </header>
   );
